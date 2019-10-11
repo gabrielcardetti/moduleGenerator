@@ -1,0 +1,10 @@
+package com.zenrise.module.{{module_name}}.repository;
+
+import com.zenrise.module.common.repository.SoftDeleteRepository;
+import com.zenrise.module.{{model_uri}};
+import com.zenrise.annotation.DeletedFilter;
+
+@DeletedFilter
+public interface {{file_name}} extends SoftDeleteRepository<{{model_name}}, Long> {
+    
+}

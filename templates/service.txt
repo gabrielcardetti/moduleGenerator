@@ -1,0 +1,15 @@
+package com.zenrise.module.{{module_name}}.service;
+
+import com.zenrise.module.common.service.base.BaseService;
+import com.zenrise.module.{{model_uri}};
+
+
+public interface {{file_name}} extends BaseService<{{model_name}}, Long>{
+
+    List<EmailTrackingLog> getAll();
+
+    void save(EmailTrackingLogDto dto) throws ObjectNotFoundException, ObjectNotValidException;
+
+    EmailTrackingLog deleteLog(long id) throws ObjectNotFoundException;
+
+}

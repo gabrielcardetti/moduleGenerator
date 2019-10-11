@@ -1,0 +1,27 @@
+package com.zenrise.module.{{emailtrackinglog}}.service.imp;
+
+import com.zenrise.module.common.service.base.AbstractService;
+
+import com.zenrise.module.{{model_uri}};
+
+import com.zenrise.module.{{repository_uri}};
+
+import com.zenrise.module.{{service_uri}};
+
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+@Service
+public class EmailTrackingServiceImpl extends AbstractService<EmailTrackingLog, Long>
+        implements EmailTrackingService {
+    
+    private EmailTrackingRepository emailTrackingRepository;
+
+    @Autowired
+    public EmailTrackingServiceImpl(EmailTrackingRepository repo){
+        super(repo);
+        this.emailTrackingRepository = repo;
+
+    }
+}
