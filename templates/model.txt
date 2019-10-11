@@ -1,13 +1,13 @@
-package com.zenrise.module.{{module_name}}.model;
+package com.zenrise.module.$module_name.model;
 
 import javax.persistence.Entity;
-import com.zenrise.module.common.model.base.{{extends_model}};
+import com.zenrise.module.common.model.base.$extends_model;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Getter @Setter @NoArgsConstructor @Entity
-public class {{file_name}} extends {{extends_model}}{
+public class $file_name extends $extends_model{
 
 }
